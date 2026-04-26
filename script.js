@@ -6,7 +6,7 @@ const resultText = document.getElementById("resultText");
 const winsText = document.getElementById("wins");
 const lossesText = document.getElementById("losses");
 const coinText = document.getElementById("coinText");
-const coin = document.getElementById(coin);
+const coin = document.getElementById("coin");
 
 let wins = 0;
 let losses = 0;
@@ -32,9 +32,9 @@ function playGame(userGuess) {
     void coin.offsetWidth;
 
     if (coinResult === "Heads") {
-        coin.classList.add(flip-heads);
+        coin.classList.add("flip-heads");
     } else {
-        coin.classList.add(flip-heads);
+        coin.classList.add("flip-tails");
     }
 
     setTimeout(function() {
